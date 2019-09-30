@@ -31,7 +31,7 @@ shinyServer(function(input, output) {
   observeEvent(input$normal,{
   mode$data <- NULL
   })
-  observe({if(is.null(GameD$da)){
+  observe({if(is.null(GameD$da)){ 
   GameD$da <- input$dateG[1]}
   })
   observeEvent(input$dateG[1],{
